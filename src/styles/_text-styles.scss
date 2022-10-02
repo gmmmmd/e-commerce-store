@@ -1,0 +1,40 @@
+.title-h1 {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: calc(34 / 26);
+  margin: 0;
+
+  @media (min-width: $media-tablet) {
+    font-size: 64px;
+  }
+}
+
+.title-h2 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: calc(23 / 18);
+  margin: 0;
+
+  @media (min-width: $media-tablet) {
+    font-size: 44px;
+  }
+}
+
+.title-h3 {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: calc(18 / 14);
+  margin: 0;
+
+  @media (min-width: $media-tablet) {
+    font-size: 26px;
+  }
+}
+
+.text-style {
+  margin: 0;
+  color: $color-text_3;
+  font-size: 12px;
+  line-height: calc(22 / 12);
+  font-weight: 500;
+}

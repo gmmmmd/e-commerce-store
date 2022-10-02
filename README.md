@@ -1,1 +1,1 @@
-# e-commerce-store
+# store-app

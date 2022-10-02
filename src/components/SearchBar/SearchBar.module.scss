@@ -1,0 +1,57 @@
+@import "@styles/_variables";
+
+.Block {
+  display: flex;
+  gap: 29px;
+  padding-bottom: 30px;
+
+  @media (min-width: $media-tablet) {
+    padding-bottom: 50px;
+  }
+
+  &__wrapper {
+    width: 100%;
+    max-width: 100%;
+    box-shadow: 0 4px 80px rgba(175, 173, 181, 0.2);
+  }
+
+  &__form {
+    display: flex;
+    padding: 8px 8px 8px 14px;
+
+    @media (min-width: $media-tablet) {
+      padding: 15px 28px 15px 25px;
+    }
+  }
+
+  &__input {
+    background: url("./../../assets/images/search-normal.svg") no-repeat center left;
+    background-size: 24px;
+    padding-top: 7px;
+    padding-bottom: 6px;
+    padding-left: 36px;   
+
+    @media (min-width: $media-tablet) {
+      background-size: 32px;
+      padding-top: 11px;
+      padding-bottom: 11px;
+      padding-left: 50px;     
+    }
+  }
+
+  &_button {
+    max-width: 100px;
+
+    @media (min-width: $media-tablet) {
+      max-width: 138px;
+    }
+  }
+
+  &__select {
+    display: none;
+
+    @media (min-width: $media-tablet) {
+      display: block;
+    }
+  }
+}

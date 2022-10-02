@@ -1,0 +1,15 @@
+@import "@styles/_variables";
+
+.Input {
+  border: none;
+  outline: none;
+  color: $color-text_3;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(25 / 14);
+  width: 100%;
+
+  @media (min-width: $media-tablet) {
+    font-size: 18px;
+  }
+}

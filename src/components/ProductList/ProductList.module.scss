@@ -1,0 +1,47 @@
+@import "@styles/_variables";
+
+.ProductList {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @media (min-width: $media-tablet) {
+    gap: 50px;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  
+    @media (min-width: $media-tablet) {
+      gap: 10px;
+    }
+  }
+
+  &__amount {
+    color: $color-text_4;
+    background-color: $color-bg_3;
+    border-radius: 20px;
+    padding: 2px 10px;
+
+    @media (min-width: $media-tablet) {
+      padding: 4px 16px;
+    }
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 17px 15px;
+    margin-bottom: 30px;
+
+    @media (min-width: 1300px) {
+      gap: 30px 29px;
+      margin-bottom: 80px;
+    }
+  }
+}
+
+

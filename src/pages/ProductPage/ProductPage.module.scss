@@ -1,0 +1,25 @@
+@import "@styles/variables";
+
+.TitleWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 32px;
+
+  @media (min-width: $media-tablet) {
+    padding-top: 100px;
+    padding-bottom: 80px;
+  }
+
+  &__description {
+    max-width: 600px;
+    text-align: center;
+  }
+}
+
+.Loader {
+  top: 80%;
+}
+
+

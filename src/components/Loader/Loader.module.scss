@@ -1,0 +1,32 @@
+.Block {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  &__img {
+    width: 100%;
+    animation: preloader-rotate 2s infinite linear;
+  }
+
+  &__size_s {
+    width: 20px;
+    height: 20px;
+  }
+
+  &__size_m {
+    width: 40px;
+    height: 40px;
+  }
+
+  &__size_l {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@keyframes preloader-rotate {
+  100% {
+    transform: rotate(-360deg);
+  }
+}

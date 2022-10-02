@@ -1,0 +1,58 @@
+@import "@styles/variables";
+
+.Container {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+
+  @media (min-width: $media-tablet) {
+    display: none;
+  }
+}
+
+.BurgerItem {
+  background-color: $color-text_1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 22px;
+  height: 2px;
+
+  &::before,
+  &::after {
+    background-color: $color-text_1;
+    content: "";
+    display: block;
+    position: absolute;
+    width: 22px;
+    height: 2px;
+    transition: transform 0.4s ease-in;
+  }
+
+  &::before {
+    top: 6px;
+  }
+
+  &::after {
+    bottom: 6px;
+  }
+
+  :global(.burger-open) & {
+    background-color: transparent;
+
+    &::before,
+    &::after {
+      top: 0;
+    }
+
+    &::before {
+      transform: rotate(225deg);
+    }
+
+    &::after {
+      transform: rotate(-225deg);
+    }
+  }
+}
